@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-test';
+
+  constructor() {
+    this.operandoA = '';
+    this.resultado = '';
+    this.operandoB = '';
+  }
+  
   operandoA:string;
   operandoB:string;
   resultado:string;
