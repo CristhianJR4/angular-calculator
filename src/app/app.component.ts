@@ -7,11 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-test';
-  operandoA:string == '';
-  operandoB:string == '';
-  resultado:string == '';
+  operandoA:string;
+  operandoB:string;
+  resultado:string;
 
   onSumar():void {
-    this.resultado = this.operandoA.concat(this.operandoB);
+    this.resultado = this.operandoA + '' + this.operandoB;
   }
 }
