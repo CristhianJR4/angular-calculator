@@ -40,7 +40,25 @@
    
     <div *ngIf="resultado" class="alert alert-primary" role="alert" fxLayoutAlign="center center">
      <p>Resultado : {{ resultado }}</p>
-    <img *ngIf="resultado" src="https://i.ibb.co/whR1f4s/bb48873d-7f1f-45fd-8f3e-411426642d57.webp">
+
+    <picture *ngIf="resultado"> 
+      <source
+        media="(max-width: 799px)"
+        srcset="
+          https://i.ibb.co/whR1f4s/bb48873d-7f1f-45fd-8f3e-411426642d57.webp
+        "
+      />
+      <source
+        media="(min-width: 800px)"
+        srcset="
+         https://i.ibb.co/whR1f4s/bb48873d-7f1f-45fd-8f3e-411426642d57.webp
+        "
+      />
+      <img
+        src="https://i.ibb.co/whR1f4s/bb48873d-7f1f-45fd-8f3e-411426642d57.webp"
+      />
+    </picture>
+      
     </div> 
 
 </div>
